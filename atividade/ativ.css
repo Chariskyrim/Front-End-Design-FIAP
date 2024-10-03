@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.caixa1 {
+    background-color: #3498db;
+    top: 50px;
+    left: 50px;
+}
+
+.caixa2 {
+    background-color: #e74c3c;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
