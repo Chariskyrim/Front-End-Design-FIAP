@@ -1,0 +1,11 @@
+a:hover {
+    color: blue;
+}
+
+input:focus {
+    border-color: green;
+}
+
+button:active {
+    background-color: red;
+}
