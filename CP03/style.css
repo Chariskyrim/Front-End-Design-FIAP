@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+  header {
+    background-color: lightblue;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    margin-bottom: 15px;
+    width: 980px;
+    height: 140px;
+  }
+  nav {
+    float: left;
+    width: 270px;
+    height: 450px;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  article {
+    float: left;
+    padding: 20px;
+    width: 690px;
+    background-color: greenyellow;
+    height: 450px; 
+    text-align: center;
+    margin-left: 15px;
+  }
+  footer {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    width: 980px;
+    height: 70px;
+  }
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
