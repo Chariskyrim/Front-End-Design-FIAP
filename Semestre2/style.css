@@ -1,0 +1,95 @@
+.grid {
+    display: grid;
+
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 40px 100px;
+}
+
+.grid > * {
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr)
+}
+
+.grid {
+    gap: 10px; /* aplica em todas as lacunas */
+    column-gap: 10px; /* aplica somente entre as colunas */
+    row-gap: 15px; /* aplica somente entre as linhas */
+}
+
+header {
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+section#produtos {
+    grid-area: produtos;
+}
+section#serviços {
+    grid-area: servicos;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidade;
+}
+
+
+#grade {
+    display: grid;
+    grid-template-areas:
+        "nav header header"
+        "nav produtos publicidade"
+        "nav servicos publicidade"
+        "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+}
+
+#grade > * {
+    border: 1px solid black;
+}
+
+.pai {
+    align-items: center;
+}
+
+.pai {
+    justify-content: space-evenly;
+}
+
+.bidoof{
+    display: grid;
+    background-color: yellow;
+    height: 500px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px;
+
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+    justify-items: stretch;
+    align-items: stretch;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.eliana {
+    justify-self: start;
+    align-self: center;
+}
